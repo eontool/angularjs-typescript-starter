@@ -1,0 +1,29 @@
+{
+  "name": "angularjs-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Daniel Dominguez",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.5.19",
+    "@types/jquery": "^2.0.33",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <title>My App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/min/vendor.min.js" charset="UTF-8"></script>
+    <script src="js/min/app.min.js" charset="UTF-8"></script>
+
+</head>
+
+<body>
+
+    <h1>My App Demo</h1>
+
+    <div ng-controller="mainCtrl as ctrl">
+        <h1>My App</h1>
+        <h2 ng-bind="ctrl.app.name"></h2>
+        <h3>{{ ctrl.app.version }}</h3>
+        <button type="button" ng-click="ctrl.main(true)">TEST</button>
+        <input type="text" name="" value="" ng-model="ctrl.app.name">
+    </div>
+
+    <div ng-controller="mainCtrl as ctrl2">
+        <h1>My App</h1>
+        <h2 ng-bind="ctrl2.app.name"></h2>
+        <h3>{{ ctrl2.app.version }}</h3>
+        <button type="button" ng-click="ctrl2.main(false)">TEST</button>
+        <input type="text" name="" value="" ng-model="ctrl2.app.name">
+    </div>
+    
+</body>
+
+</html>

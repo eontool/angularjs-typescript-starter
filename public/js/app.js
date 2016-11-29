@@ -14,9 +14,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var MainCtrl = function () {
-    function MainCtrl() {
+    function MainCtrl($http) {
         _classCallCheck(this, MainCtrl);
 
+        this.$http = $http;
         this.app = {
             name: 'My App',
             version: 1.3
@@ -24,15 +25,25 @@ var MainCtrl = function () {
     }
 
     _createClass(MainCtrl, [{
-        key: "main",
+        key: 'main',
         value: function main(value) {
             console.log(value);
+        }
+    }, {
+        key: 'getData',
+        value: function getData() {
+            this.$http.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson').then(function (data) {
+                console.log(data);
+            }).catch(function (error) {
+                console.log(error);
+            });
         }
     }]);
 
     return MainCtrl;
 }();
 
+MainCtrl.$inject = ['$http'];
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = MainCtrl;
 

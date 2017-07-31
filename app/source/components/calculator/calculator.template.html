@@ -1,0 +1,9 @@
+<form class="form-inline">
+  <div class="input-group">
+    <input type="number" class="form-control" id="valueA" placeholder="" ng-model="vm.valueA" ng-change="vm.addValues()">
+    <div class="input-group-addon">+</div>
+    <input type="number" class="form-control" id="valueB" placeholder="" ng-model="vm.valueB" ng-change="vm.addValues()">
+  </div>
+</form>
+<br>
+<h2 ng-bind-html="vm.result" id="result"></h2>

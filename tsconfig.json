@@ -1,17 +1,15 @@
 {
+    "compileOnSave": false,
     "compilerOptions": {
+        "outDir": "./compiled",
+        "target": "ES5",
         "module": "commonjs",
-        "target": "es6",
-        "rootDir": "source/",
-        "outDir": "build/",
-        "noImplicitAny": true,
-        "removeComments": false,
-        "sourceMap": false
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "lib" : ["es2015", "es2015.iterable", "dom", "es2015.promise"]
     },
-    "compileOnSave": true,
     "exclude": [
-        ".git",
         "node_modules",
-        ".vscode"
+        "app/test/e2e"
     ]
 }

@@ -267,7 +267,7 @@ gulp.task(`reports`, () => {
 
 
   const options = {
-    brandTitle:`ASM e2e Report`,
+    brandTitle:`e2e Report`,
     theme: `bootstrap`,
     jsonFile: `./reports/e2e/results.json`,
     output: `./reports/e2e/results.html`,
